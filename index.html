@@ -112,10 +112,52 @@
 
             </div>
     </section>
-    <!-- word section -->
-    <section id="word-container" class="w-11/12 bg-gray-100 p-10 mx-auto my-10 grid grid-cols-3 gap-5">
-        
+    <!-- loading spinner section  -->
+    <section id="spinner" class="flex items-center justify-center my-10 hidden">
+        <span class="loading loading-spinner text-primary"></span>
     </section>
+    <!-- search section  -->
+    <section class="flex items-center justify-center mt-10">
+        <div class="join">
+            <div>
+                <label class="input validator join-item">
+                    <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none"
+                        stroke="currentColor">
+                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                    </g>
+                    </svg>
+                    <input id="search-input" type="email" placeholder="Search Vocabularies" required />
+                </label>
+            </div>
+            <button id="search-btn" class="btn btn-primary join-item">Search</button>
+        </div>
+    </section>
+    <!-- word section -->
+    <section id="word-container" class="w-11/12 bg-gray-100 p-10 mx-auto my-10 grid  md:grid-cols-3 gap-5 rounded-2xl">
+        <div class="text-center col-span-full font-bangla space-y-6 py-10">
+            <p class="font-extralight text-sm text-gray-600">আপনি এখনো কোন Lesson Select করেননি</p>
+            <h1 class="font-semibold text-4xl">একটি Lesson Select করুন।</h1>
+        </div>
+    </section>
+    <!-- Open the modal using ID.showModal() method -->
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="details-container">
+                <h1>Eager(<i class="fa-solid fa-microphone-lines"></i>:ইগার)</h1>
+                <p>Meaning</p>
+                <p>আগ্রহী</p>
+                <h1>Example</h1>
+                <p>The kids were eager to open their gifts.</p>
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
     <!-- main section  -->
     <main>
 
@@ -123,7 +165,17 @@
 
     <!-- footer section  -->
     <footer>
-
+        <!-- left side -->
+        <div class="flex flex-col items-center justify-center space-y-3">
+            <!-- logo -->
+            <a class="flex gap-1 items-center">
+                <span class="text-lg font-semibold">English</span>
+                <img src="./assets/logo.png" alt="">
+                <span class="font-bangla text-lg font-semibold">জানালা</span>
+            </a>
+            <p class="font-bangla text-lg font-bold">ইংরেজি শিখুন সহজে</p>
+            <p>Providing ED-Tech Applications since 2025</p>
+        </div>
     </footer>
 
     <!-- JS linked -->
